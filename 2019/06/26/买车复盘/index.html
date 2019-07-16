@@ -1,0 +1,254 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" xmlns:v-bind="http://www.w3.org/1999/xhtml">
+
+<head><meta name="generator" content="Hexo 3.9.0">
+    <title>买车复盘 - 常鸿飞的记录薄</title>
+<meta charset="utf-8">
+<meta name="X-UA-Compatible" content="IE=edge">
+<meta name="author" content="Neo Chang">
+<meta name="description" content="万物皆可盘！">
+<meta name="keywords" content="日记,工作,生活,代码,Javascript,Flutter,Python">
+    <meta charset="utf-8">
+    <meta name="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="renderer" content="webkit">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE=" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/journal.css?47073964">
+
+<script src="/js/loadCSS.js"></script>
+<script>
+    loadCSS("https://fonts.googleapis.com/css?family=Lora|Montserrat|Fira+Mono|Material+Icons");
+    (function (d) {
+        var config = {
+                kitId: 'dwg1tuc',
+                scriptTimeout: 3000,
+                async: true
+            },
+            h = d.documentElement, t = setTimeout(function () {
+                h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+            }, config.scriptTimeout), tk = d.createElement("script"), f = false,
+            s = d.getElementsByTagName("script")[0], a;
+        h.className += " wf-loading";
+        tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+            a = this.readyState;
+            if (f || a && a != "complete" && a != "loaded") return;
+            f = true;
+            clearTimeout(t);
+            try {
+                Typekit.load(config)
+            } catch (e) {
+            }
+        };
+        s.parentNode.insertBefore(tk, s)
+    })(document);
+</script>
+<noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora|Montserrat|Anonymous+Pro:400|Material+Icons">
+</noscript>
+</head>
+<body>
+<div id="top"></div>
+<div id="app">
+<div class="single-column-drawer-container" ref="drawer" v-bind:class="{ 'single-column-drawer-container-active': isDrawerOpen }">
+    <div class="drawer-content">
+        <div class="drawer-menu">
+            <a class="a-block drawer-menu-item false" href="https://chang0022.github.io">
+                首页
+            </a>
+            <a class="a-block drawer-menu-item false" href="/archives">
+                归档
+            </a>
+
+            
+            
+
+            
+        </div>
+    </div>
+</div>
+<transition name="fade">
+    <div v-bind:class="{ 'single-column-drawer-mask': mounted }" v-if="isDrawerOpen" v-on:click="toggleDrawer"></div>
+</transition>
+<nav ref="navBar" class="navbar sticky-top navbar-light single-column-nav-container">
+    <div ref="navBackground" class="nav-background"></div>
+    <div class="container container-narrow nav-content">
+        <button id="nav_dropdown_btn" class="nav-dropdown-toggle" type="button" v-on:click="toggleDrawer">
+            <i class="material-icons">
+                menu
+            </i>
+        </button>
+        <a ref="navTitle" class="navbar-brand" href="/">
+            常鸿飞的记录薄
+        </a>
+    </div>
+</nav>
+<div class="single-column-header-container" ref="pageHead" v-bind:style="{ transform: 'translateZ(0px) translateY('+.3*scrollY+'px)', opacity: 1-navOpacity }">
+    <a href="/">
+        <div class="single-column-header-title">常鸿飞的记录薄</div>
+        <div class="single-column-header-subtitle"></div>
+    </a>
+</div>
+<div ref="sideContainer" class="side-container">
+    <a class="a-block nav-head false" href="/">
+        <div class="nav-title">
+            Evolution.
+        </div>
+        <div class="nav-subtitle">
+            一點一滴<br>匯聚成河
+        </div>
+    </a>
+
+    <div class="nav-link-list">
+        <a class="a-block no-tint nav-link-item false" href="/archives">
+            归档
+        </a>
+
+        
+        
+
+        
+    </div>
+
+    
+    <div class="nav-footer">
+        Proudly published with Hexo<br>
+        
+        Theme <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="noreferrer noopener">Journal.</a> by <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopener">Makito</a><br>
+        
+        &copy; 2019 <a href="https://chang0022.github.io">常鸿飞的记录薄</a>
+    </div>
+</div>
+<div ref="extraContainer" class="extra-container">
+    <div class="pagination">
+        <a id="globalBackToTop" class="pagination-action animated-visibility" href="#top" :class="{ invisible: scrollY == 0 }">
+            <i class="material-icons pagination-action-icon">
+                keyboard_arrow_up
+            </i>
+        </a>
+
+        
+    </div>
+</div>
+
+<div ref="streamContainer" class="stream-container">
+    <div class="post-list-container post-list-container-shadow">
+        <div class="post">
+            <div class="post-head-wrapper" style="background-image: url('http://ptp7xxhmf.bkt.clouddn.com/2019-06-26.jpg')">
+                <div class="post-title">
+                    买车复盘
+                    <div class="post-meta">
+                        <time datetime="2019-06-26T08:20:20.000Z" itemprop="datePublished">
+                            2019-06-26 16:20
+                        </time>&nbsp;
+                        
+    
+                        
+                        
+                        <i class="material-icons" style>label</i>
+                        
+                        <a href="/tags/生活/">生活</a>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+    
+            <div class="post-body-wrapper">
+                <div class="post-body">
+                    <p>工作上的项目、事故等都会复盘，就复盘一下买车经历。</p>
+<blockquote>
+<p>结论：略有不满</p>
+</blockquote>
+<p>今年极其幸运的摇到牌照指标，于是买车就较早的提上日程。</p>
+<h3 id="时机选择"><a href="#时机选择" class="headerlink" title="时机选择"></a>时机选择</h3><p>话说买车淡季3、4和7、8，金9银11。怎么讲吶，3、4月是年后钱花的差不多了；7、8月 ①天气炎热不方便出行，②是 年已过半，忙于工作生活的半年规划和一年业绩；9月是十一长假出行，11月是年关将至。</p>
+<p>但是上面的销售季闲扯对我的买车影响不大。这次影响最大的是两个时机。1、国五各省限售，2、购置税7月1号调整。自己原本计划下半年买车，稀里糊涂的选了这个节骨眼。</p>
+<h5 id="1、国五国六交替"><a href="#1、国五国六交替" class="headerlink" title="1、国五国六交替"></a>1、国五国六交替</h5><p>各省响应国家号召，<a href="http://www.hangzhou.gov.cn/art/2019/5/22/art_812269_34310586.html" target="_blank" rel="noopener">7月1日起，浙江全面实施轻型汽车国六标准</a>。各家国五车不同程度大甩卖。降价王者 ATS-L 降价波动 7W ~ 9W，可以说是亏本甩卖。就算雷打不动的凯美瑞国五版本部分地区优惠 1.2W ~ 1.5W。国五车是7月1号后不让买了。那么各家国五优惠力度大于国六优惠力度。我在买车的时候，大致上已经没有国五车了。但想想之前卖出去的国五不说亏本吧，但至少不赚吧。那么业绩只好从国六买家上争取了。</p>
+<h5 id="2、购置税调整"><a href="#2、购置税调整" class="headerlink" title="2、购置税调整"></a>2、购置税调整</h5><p>这个变化对于车价没有优惠的车来说其实没有太大浮动。之前大体是稀里糊涂交了，现在7月1日实施之后，消费者购买车辆应扣税款将取决于实际支付金额，也就是俗称的“裸车成交价”。目前销售都说现在的购置税是8.5%。其实还是10%。见2000年颁布的 <a href="http://www.gov.cn/gongbao/content/2001/content_60852.htm" target="_blank" rel="noopener">中华人民共和国车辆购置税暂行条例</a> 第五条</p>
+<blockquote>
+<p>第六条（一）纳税人购买自用的应税车辆的计税价格，为纳税人购买应税车辆而支付给销售者的全部价款和价外费用，不包括增值税税款。</p>
+</blockquote>
+<p>那么 8.5% 怎么来的呢？</p>
+<blockquote>
+<p>购置税=（车价-增值税）*购置税税率（10%）。因为增值税税率为17%。所以公式演变为车价÷1.17×10%≈车价×8.547%</p>
+</blockquote>
+<p>根据7月1号实施的<a href="http://www.chinatax.gov.cn/n810341/n810755/c3987147/content.html" target="_blank" rel="noopener">中华人民共和国车辆购置税法</a></p>
+<blockquote>
+<p>第四条　车辆购置税的税率为百分之十。<br>第六条（一）纳税人购买自用应税车辆的计税价格，为纳税人实际支付给销售者的全部价款，不包括增值税税款；</p>
+</blockquote>
+<p>可以说是明确了税收范围。那么会有优惠么？对于凯美瑞这种没啥优惠的车来说应该没变化。我6月底定车，7月提车，购置税有变化。讲道理是没区别，但人算不如天算天上，🙏🏻吧。</p>
+<p><strong>另外，政策的改变对于不懂的法规的人很有忽悠的效果。</strong></p>
+<h3 id="砍价专家"><a href="#砍价专家" class="headerlink" title="砍价专家"></a>砍价专家</h3><p>砍价一定需要<strong>节奏！节奏！节奏！</strong></p>
+<p><strong>先谈全款，再谈贷款。</strong>按照网上说，贷款会比全款优惠 2000￥~3000￥。4S店是倾向顾客贷款购买的。我是上来表现贷款的意愿。</p>
+<p>先谈<strong>现金优惠</strong>，再谈油卡。现金优惠是实打实的优惠。1000油卡 ≠ 1000￥，首先二手市场有人9.7折出手油卡，再次4S 批量购买油卡会优惠，具体不清楚，网上说有6折的。那么优惠1000油卡，可能对于他们是800￥。那么现金优惠1000￥也许约等于1200+油卡。</p>
+<p>如果贷款的话，即使厂家有2年或者3年免息，但往往4S店还是会有金融服务费。银行贷款的免息会分摊给厂家与4S店，4S就分摊给买家，设置变为经销商的利润点。因为没有明确的法律，好像只有法规。金融服务费往往是贷款金额的 1% ~ 3%，所以能砍就砍吧。</p>
+<p>接下来就要谈保险，如果全款那就自己去买。贷款的话，正常的是第一年需要在店里买，后面就无所谓了。如果有些店必须第二年续保，就会有<strong>续保押金！</strong>，等你一年半载后忘掉了，拿钱就进他们口袋了，这样的霸王条款，遇到这样的店最好不要买了。还好我这次贷款是属于信用贷，保险的受益人是自己，不会抵押绿本（机动车登记证书）或者车钥匙。对于保险，他们是可以优惠的，因为保险给他们是有返点的，至于能便宜多少，你可以提前与其他保险公司咨询一下。</p>
+<p>最后就是送东西了，脚垫，贴膜，行车记录仪等。这些送的东西都不是太值钱，能换油卡就换油卡。</p>
+<p>我这次的失误就是被他带着节奏走。说是优惠了8500元。5000油卡优惠，2000保险优惠这算为油卡，服务费优化1500，变为2%。细想下来，拆东墙补西墙，1500本来就不该我出，2000元等于买了油卡。并没有优惠那么多😂。送的贴膜也不好。前挡直接没要。行车记录仪说原厂原价1200，给我对折。淘宝走量500+。</p>
+<h3 id="地理位置"><a href="#地理位置" class="headerlink" title="地理位置"></a>地理位置</h3><p>杭州几家4S店都打过电话，有一家在余杭，我觉得太远没去。后来再办理贷款的地方和一个也是买凯美瑞的小哥聊，一打听他在那家店买的2.0的，优惠了将近1万，要知道2.5的比2.0的优惠多。所以我🔞了！</p>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>买车对于一般家庭来说，还是不小的事情，看看推荐然后务必要多多试驾几款。然后看自己的真实用途，喜欢远行就看看SUV，顾家省心看看日系，动力操控看看德系，体面社交看看BBA，经济使用看看国产也不错。一定要多比比，不要像我就种草凯美瑞，不过话也说会来，买自己开心又没啥经济压力最好，不要太在意其他意见。</p>
+<p>砍价最好2、3个人，自己买车都比较冲动，务必找个头脑冷静的。而且现在网络发达，价格几乎透明（我也是看网上说杭州地区优化最多8000才😭），我没选择第一家的原因就是那个销售给我报价里面有一个公证费，即使贷款是抵押贷也没有这个公证费一说。我看了就没在去，实在是把消费者当傻子。这家4S店这点钱不放过。而且再后面他们另外一个销售打电话问我，我说我已经定车了，他立刻没好气的说，你这样会买亏的。我🔞了，都没问优惠多少钱就说买亏了。真对这家没啥好感。再多吐槽一下看车的时候谈不上热情，不停的玩手机。没错我说的就是萧山那家。另外江干东昌的销售小哥沟通挺好，虽然没在他们家买。不像我这个销售，常大哥，常大哥😂。</p>
+<p>买车最好不要错过车展，车展确实会有优惠的，只是他们也是为了冲点业绩。</p>
+<p>买车时间与金钱真的反比，你有时间多磨，不嫌麻烦跑远点，确实能拿到较低价格。货比四五家！</p>
+<h3 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h3><p>叨叨这么多，祝大家都满意的买到自己满意的车。</p>
+
+                </div>
+            </div>
+    
+            <nav class="post-pagination">
+    
+    <span class="page-number"></span>
+    
+</nav>
+
+    
+            
+<div id="gitalk-container" class="gittalk-customize-commit"></div>
+
+        </div>
+    </div>
+    <div class="single-column-footer">
+    Proudly published with Hexo<br>
+    
+    Theme <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="noreferrer noopener">Journal.</a> by <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopener">Makito</a><br>
+    
+    &copy; 2019 <a href="https://chang0022.github.io">常鸿飞的记录薄</a>
+</div>
+</div>
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.4/dist/umd/popper.min.js" integrity="sha256-EGs9T1xMHdvM1geM8jPpoo8EZ1V1VRsmcJz8OByENLA=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha256-VsEqElsCHSGmnmHXGQzvoWjWwoznFSZc6hs7ARLRacQ=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.min.js" integrity="sha256-FtWfRI+thWlNz2sB3SJbwKx5PgMyKIVgwHCTwa3biXc=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/smooth-scroll@14.2.1/dist/smooth-scroll.polyfills.min.js" integrity="sha256-CI4Gq5E0io1Pv0xM3qPM+NUIOhbIBvC3GiN1Y4KhXpw=" crossorigin="anonymous"></script>
+<script src="/js/journal.js?93318958"></script>
+
+
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+    <link rel="stylesheet" href="/css/gittalk.css?74455257">
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.min.js"></script>
+
+    <script type="text/javascript">
+        var gitalk = new Gitalk({
+          clientID: '2570eaee0a4ac97052db', 
+          clientSecret: 'bbc54b9f072316f24dd0641e6235312ed408bb96', 
+          repo: 'chang0022.github.io', 
+          owner: 'chang0022', 
+          admin: ['chang0022'], 
+          id: md5(location.pathname),
+          labels: ['comment'],
+          distractionFreeMode: false 
+        })
+        gitalk.render('gitalk-container')           
+    </script> 
+
+
+</body>
+</html>

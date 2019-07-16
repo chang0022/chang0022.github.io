@@ -1,0 +1,93 @@
+.gittalk-customize-commit {
+  padding: 0 20px;
+}
+.gittalk-customize-commit a {
+  color: #9f563a;
+}
+.gittalk-customize-commit a:hover {
+  color: #7a422c !important;
+  border-color: #7a422c !important;
+}
+.gittalk-customize-commit svg {
+  vertical-align: initial;
+}
+.gittalk-customize-commit .gt-link-counts {
+  color: black;
+  border-bottom: 0;
+  pointer-events: none;
+}
+.gittalk-customize-commit .gt-popup {
+  font-size: 0.775em;
+  color: #9f563a;
+}
+.gittalk-customize-commit .gt-meta {
+  font-size: 0.875em;
+}
+.gittalk-customize-commit .gt-header-controls-tip,
+.gittalk-customize-commit .gt-avatar-github,
+.gittalk-customize-commit .gt-header-avatar {
+  display: none;
+}
+.gittalk-customize-commit .gt-header-comment {
+  margin-left: 0;
+}
+.gittalk-customize-commit .gt-header-textarea {
+  background: white;
+}
+.gittalk-customize-commit .gt-btn {
+  border: 1px solid #9f563a;
+  background-color: #9f563a;
+}
+
+.gittalk-customize-commit .gt-btn-preview,
+.gittalk-customize-commit .gt-btn-public {
+  color: #9f563a;
+  background-color: #fff;
+}
+
+.gittalk-customize-commit .gt-btn:hover {
+  border: 1px solid #7a422c;
+  background-color: #7a422c;
+}
+
+.gittalk-customize-commit .gt-btn-preview:hover {
+  background-color: #fff;
+  border-color: #7a422c;
+  color: #7a422c;
+}
+
+.gittalk-customize-commit .gt-svg svg {
+  fill: #9f563a;
+}
+.gittalk-customize-commit .gt-comment-username {
+  color: #9f563a;
+  font-weight: 700;
+}
+
+.gittalk-customize-commit .gt-comment-admin .gt-comment-content {
+  padding: 0;
+  padding-right: 1em;
+  background-color: transparent;
+}
+.gittalk-customize-commit .gt-comment-admin .gt-comment-content {
+  box-shadow: none;
+}
+.gittalk-customize-commit .gt-comment-avatar {
+  margin-top: 0.3em;
+  width: 1.8em;
+  height: 1.8em;
+  border-radius: 3px;
+  overflow: hidden;
+}
+.gittalk-customize-commit .gt-comment-content {
+  margin-left: 0.75em;
+}
+.gittalk-customize-commit .gt-comment-text,
+.gittalk-customize-commit .gt-comment-date {
+  color: #656c7a;
+  font-weight: 500;
+  font-size: 0.8em;
+}
+.gittalk-customize-commit .gt-comment-header {
+  margin-bottom: 0;
+}
